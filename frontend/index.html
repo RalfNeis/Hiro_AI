@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hiro AI Terminal</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@900&family=Teko:wght@400;600;700&display=swap" rel="stylesheet">
+    
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>HIRO_AI</h1>
+        <div id="chat-box">
+            <div class="ai-msg">
+                <span class="ai-label">HIRO:</span>
+                <span id="hiro-greeting"></span>
+            </div>
+        </div>
+        <div class="input-area">
+            <textarea id="user-input" placeholder="Ask Hiro" rows="3"></textarea>
+            <button onclick="sendMessage()">SEND</button>
+        </div>
+    </div>
+
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
