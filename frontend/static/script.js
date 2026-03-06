@@ -10,7 +10,7 @@ document.addEventListener("DOMContentLoaded", () => {
     // Pick a random number between 0 and 2
     const randomIndex = Math.floor(Math.random() * greetings.length);
     
-    // Inject the random greeting into the HTML
+    // Inject the random greeting
     document.getElementById("hiro-greeting").innerText = greetings[randomIndex];
 });
 
@@ -21,14 +21,14 @@ async function sendMessage() {
 
     const chatBox = document.getElementById("chat-box");
     
-    // Add User Message immediately to the display
+    // Add User Message
     const formattedUserMsg = message.replace(/\n/g, '<br>');
     chatBox.innerHTML += `<div class="user-msg">${formattedUserMsg}</div>`;
     inputField.value = ""; 
     chatBox.scrollTop = chatBox.scrollHeight; 
 
     try {
-        // Send the message to your Flask backend route '/chatbot'
+        // Send the message to Flask backend route '/chatbot'
         const response = await fetch('/chatbot', {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
