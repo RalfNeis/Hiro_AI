@@ -238,3 +238,51 @@ button:hover {
     51% { transform: skewX(-8deg) translate(0); }
     100% { transform: skewX(-8deg) translate(0); }
 }
+
+/* --- MOBILE RESPONSIVENESS (DATAPAD MODE) --- */
+@media (max-width: 768px) {
+    .container {
+        width: 98%;
+        padding: 15px;
+        border-radius: 10px;
+    }
+
+    /* Shrink the massive Cyberpunk header */
+    h1 {
+        font-size: 3rem; 
+        letter-spacing: 2px;
+        margin-bottom: 15px;
+    }
+
+    /* Adjust chat text and spacing for small screens */
+    #chat-box {
+        font-size: 1.2rem; 
+        padding: 12px;
+        min-height: 60vh; /* Prevents the keyboard from hiding the chat */
+        gap: 15px;
+    }
+
+    /* Let messages take up more of the narrow screen */
+    .user-msg, .ai-msg {
+        max-width: 90%; 
+        padding: 10px 14px;
+    }
+
+    .input-area {
+        gap: 8px; /* Tighter spacing between input and button */
+    }
+
+    /* Scale down the input box */
+    textarea {
+        font-size: 1.2rem;
+        padding: 10px;
+        height: 45px;
+    }
+
+    /* Shrink the button so it doesn't crowd the screen */
+    button {
+        padding: 0 15px;
+        font-size: 1rem;
+        height: 45px;
+    }
+}
