@@ -48,7 +48,12 @@ async function sendMessage() {
             // Check if the error is the Google API Rate Limit
             if (errorText.includes('429') || errorText.includes('RESOURCE_EXHAUSTED')) {
                 chatBox.innerHTML += `<div class="ai-msg error"><span class="ai-label">HIRO:</span> Whoa, slow down! My neural processors are overheating because you are spamming me. Give me like 20 seconds to cool down before you break something.</div>`;
-            } else {
+            } 
+            // Check if the error is a 503 Service Unavailable, which might indicate server issues on the backend
+            else if (errorText.includes('503') || errorText.includes('Service Unavailable')) {
+                chatBox.innerHTML += `<div class="ai-msg error"><span class="ai-label">HIRO:</span> Mainframe connection severed. Looks like the megacorps are having server issues on their end. Try again in a few minutes when they plug the power cable back in.</div>`;
+            }
+            else {
                 // If it is a different kind of error, print the normal message
                 chatBox.innerHTML += `<div class="ai-msg error"><span class="ai-label error">ERROR:</span> System Malfunction: ${errorText}</div>`;
             }
