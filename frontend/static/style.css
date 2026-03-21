@@ -49,11 +49,17 @@ body {
     padding: 4px; 
     background: linear-gradient(to right, #00ffaa 50%, #d500f9 50%); 
     -webkit-mask: 
-        linear-gradient(#fff 0 0) content-box, 
-        linear-gradient(#fff 0 0);
-    -webkit-mask-composite: xor;
-    mask-composite: exclude;
-    pointer-events: none;
+            linear-gradient(#fff 0 0) content-box,
+            linear-gradient(#fff 0 0);
+        -webkit-mask-composite: xor;
+
+        /* NEW: The Standard version for all other browsers */
+        mask: 
+            linear-gradient(#fff 0 0) content-box,
+            linear-gradient(#fff 0 0);
+        mask-composite: exclude;
+        
+        pointer-events: none;
 }
 
 /* --- THE CYBERPUNK HEADER --- */

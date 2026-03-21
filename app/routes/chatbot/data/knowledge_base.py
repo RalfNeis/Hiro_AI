@@ -1,6 +1,8 @@
 knowledge_base = {
     "Name": "Hiro AI",
-    "School Name": "Integrated School of Science (ISS)",
+    "School Name": "Integrated School of Science (IS)",
+    "Established": "2003",
+    "System Type": "Co-educational, Non-sectarian",
     "Programs Offered": [
         "Play School", 
         "Pre-Elementary", 
@@ -15,7 +17,18 @@ knowledge_base = {
         "ABM (Accountancy, Business, and Management)",
         "HUMSS (Humanities and Social Sciences)"
     ],
-    "Tuition Fee": "Annual tuition starts at approximately ₱30,900 (based on Grade 1 baseline).",
+    "Teaching Methodology": "5A's Learning Approach (Aim, Action, Analysis, Apply, Assess)",
+    "Key Partnerships": [
+        "Microsoft Education (Office 365, 21st Century Learning Design Framework)",
+        "XSEED Academic Program (English, Science, and Math)"
+    ],
+    "Notable Facilities": [
+        "iPad Laboratory",
+        "Physics, Biology, and Chemistry Laboratories",
+        "Technology & Livelihood Education (TLE) Lab",
+        "Industrial Laboratories (woodworks, metalworks)"
+    ],
+    "Tuition Fee": "Annual tuition starts at approximately ₱30,900.",
     "Campuses": {
         "Magdalo (Main)": "135 Magdalo, Kawit, Cavite 4104",
         "Centennial": "Centennial Road, Kawit, Cavite",
