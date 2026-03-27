@@ -1,4 +1,4 @@
-# HIRO_AI // TERMINAL 🤖
+# HIRO_AI 
 
 ![Cyberpunk Theme](https://img.shields.io/badge/UI_Theme-Cyberpunk%3A_Edgerunners-d500f9?style=for-the-badge&logo=css3&logoColor=00ffaa)
 ![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
