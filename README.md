@@ -45,5 +45,5 @@ GEMINI_API_KEY=your_actual_api_key_here
 ```
 ### 5. Boot the System
 ```bash
-python run.py
+flask --app run.py run (for editing: flask --app run.py run --debug)
 ```
