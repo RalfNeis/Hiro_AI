@@ -32,7 +32,7 @@ cd Hiro_AI
 ### 2. Create a Virtual Environment (Recommended)
 ```bash
 python -m venv .venv
-source .venv/bin/activate  # On Windows use: .venv\Scripts\activate
+.venv\Scripts\activate
 ```
 ### 3. Install Dependencies
 ```bash
@@ -45,5 +45,5 @@ GEMINI_API_KEY=your_actual_api_key_here
 ```
 ### 5. Boot the System
 ```bash
-flask --app run.py run (for editing: flask --app run.py run --debug)
+flask --app run.py run # for editing: flask --app run.py run --debug
 ```
